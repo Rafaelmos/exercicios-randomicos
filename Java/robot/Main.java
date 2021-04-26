@@ -2,28 +2,36 @@ import java.util.ArrayList;
 
 public class Main extends Robot{
 	
-	public Main(String nome, String direcao, ArrayList<Integer> posicao) {
+	private Main(String nome, String direcao, ArrayList<Integer> posicao) {
 		super(nome, direcao, posicao);
 	}
 
 	public static void main(String[] args) {
-		Robot robot = new Robot("Robertinho", "Norte", posicao);
+		Robot robot = new Robot("Robertinho", "Norte", getPosicao());
 		
 		robot.iniciarRobot();
 		
-		robot.andarVariosPasso(5);
+		//robot.andarVariosPasso(5);
 		
-		//robot.mudarPosicao();
+		//robot.mudarPosicao(2,5);
 		
-		robot.mudarDirecao();
+		/**SOBRE AS DIREÇÕES:
+		 * DIREÇÃO NORTE É NA COORNEADA Y CAMINHA EM SENTIDO POSITIVO.
+		 * DIREÇÃO SUL	 É NA COORNEADA Y CAMINHA EM SENTIDO NEGATIVO.
+		 * DIREÇÃO LESTE É NA COORNEADA X CAMINHA EM SENTIDO POSITIVO.
+		 * DIREÇÃO OESTE É NA COORNEADA X CAMINHA EM SENTIDO NEGATIVO.
+		 * @author Rafael_Moura
+		 */
 		
-		robot.andarUmPasso();
+		//robot.mudarDirecao();
+		
+		//robot.andarUmPasso();
 
-		robot.statusRobot();
+		//robot.statusRobot();
 		
-		robot.retornaPosZero();
+		//robot.retornaPosZero();
 		
-		robot.statusRobot();
+		//robot.statusRobot();
 
 	}
 	
