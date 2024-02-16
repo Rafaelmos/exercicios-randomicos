@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Segoe UI', sans-serif;*/
+}
+
+.card_wanted {
+    width: 720px;
+    border-radius: 10%;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/back.png');
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card_wanted_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    font-size: x-large;
+}
+
+.card_wanted_left>p {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+
+}
+
+.card_wanted_left>h1 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_wanted_left>span {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+.card_wanted_left .left {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 20px;
+    justify-content: right;
+    margin-top: 30px;
+}
+
+.card_wanted_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.card_wanted_right>img {
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.card_wanted_right .name {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+    padding-bottom: 10px;
+}
